@@ -29,7 +29,7 @@ slots:
 
 responses:
   utter_saudacao:
-    - text: "Olá! Eu sou o assistente da Som na Nuvem. Como posso ajudar você hoje?"
+    - text: "Olá! Somos os assistentes Bruno E Cortez, como podemos te ajudar?????"
   
   utter_despedida:
     - text: "Obrigado por entrar em contato! Se precisar de mais ajuda, estou aqui."
@@ -42,6 +42,9 @@ responses:
   
   utter_confirmar_encaminhamento:
     - text: "Você gostaria que eu encaminhasse seu caso para um atendente humano?"
+
+  utter_problema_acesso:
+    - text: "volte mais tarde"
 
 actions:
   - action_fornecer_suporte
