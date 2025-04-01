@@ -1,0 +1,38 @@
+version: "3.1"
+
+stories:
+- story: saudacao
+  steps:
+    - intent: saudacao
+    - action: utter_saudacao
+
+- story: despedida
+  steps:
+    - intent: despedida
+    - action: utter_despedida
+
+- story: problema_acesso
+  steps:
+    - intent: problema_acesso
+    - action: action_fornecer_suporte
+
+- story: problema_plano
+  steps:
+    - intent: problema_plano
+    - action: action_fornecer_suporte
+
+- story: problema_tecnico
+  steps:
+    - intent: problema_tecnico
+    - action: action_fornecer_suporte
+    - action: utter_confirmar_encaminhamento
+    - intent: afirmar
+    - action: utter_encaminhar_humano
+
+- story: problema_pagamento
+  steps:
+    - intent: problema_pagamento
+    - action: action_fornecer_suporte
+    - action: utter_confirmar_encaminhamento
+    - intent: afirmar
+    - action: utter_encaminhar_humano

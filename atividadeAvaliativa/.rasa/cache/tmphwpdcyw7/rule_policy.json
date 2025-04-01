@@ -1,0 +1,34 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mudar_plano\"}}]": "utter_mudar_plano",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mudar_plano\"}}, {\"prev_action\": {\"action_name\": \"utter_mudar_plano\"}, \"user\": {\"intent\": \"mudar_plano\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"solicitar_atendente\"}}]": "utter_transferir_atendente",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"solicitar_atendente\"}}, {\"prev_action\": {\"action_name\": \"utter_transferir_atendente\"}, \"user\": {\"intent\": \"solicitar_atendente\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"acessar_conta\"}}]": "utter_erro_acesso",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"acessar_conta\"}}, {\"prev_action\": {\"action_name\": \"utter_erro_acesso\"}, \"user\": {\"intent\": \"acessar_conta\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saudacao\"}}]": "utter_saudacao",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saudacao\"}}, {\"prev_action\": {\"action_name\": \"utter_saudacao\"}, \"user\": {\"intent\": \"saudacao\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"erro_tecnico\"}}]": "utter_erro_tecnico",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"erro_tecnico\"}}, {\"prev_action\": {\"action_name\": \"utter_erro_tecnico\"}, \"user\": {\"intent\": \"erro_tecnico\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"erro_tecnico\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saudacao\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"acessar_conta\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mudar_plano\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mudar_plano\"}}, {\"prev_action\": {\"action_name\": \"utter_mudar_plano\"}, \"user\": {\"intent\": \"mudar_plano\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"acessar_conta\"}}, {\"prev_action\": {\"action_name\": \"utter_erro_acesso\"}, \"user\": {\"intent\": \"acessar_conta\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saudacao\"}}, {\"prev_action\": {\"action_name\": \"utter_saudacao\"}, \"user\": {\"intent\": \"saudacao\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"solicitar_atendente\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"solicitar_atendente\"}}, {\"prev_action\": {\"action_name\": \"utter_transferir_atendente\"}, \"user\": {\"intent\": \"solicitar_atendente\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"erro_tecnico\"}}, {\"prev_action\": {\"action_name\": \"utter_erro_tecnico\"}, \"user\": {\"intent\": \"erro_tecnico\"}}]",
+      "predicting default action with intent session_start"
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+version: "3.1"
+
+intents:
+  - saudacao
+  - despedida
+  - problema_acesso
+  - problema_plano
+  - problema_tecnico
+  - problema_pagamento
+  - negar
+  - afirmar
+
+entities:
+  - problema
+
+slots:
+  problema:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      intent: problema_acesso
+    - type: from_text
+      intent: problema_plano
+    - type: from_text
+      intent: problema_tecnico
+    - type: from_text
+      intent: problema_pagamento
+
+responses:
+  utter_saudacao:
+    - text: "Olá! Eu sou o assistente da Som na Nuvem. Como posso ajudar você hoje?"
+  
+  utter_despedida:
+    - text: "Obrigado por entrar em contato! Se precisar de mais ajuda, estou aqui."
+  
+  utter_pedir_mais_detalhes:
+    - text: "Poderia me dar mais detalhes sobre o problema que está enfrentando?"
+  
+  utter_encaminhar_humano:
+    - text: "Entendi. Vou encaminhar seu caso para um atendente humano que entrará em contato em breve."
+  
+  utter_confirmar_encaminhamento:
+    - text: "Você gostaria que eu encaminhasse seu caso para um atendente humano?"
+
+actions:
+  - action_fornecer_suporte
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

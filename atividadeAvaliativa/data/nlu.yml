@@ -1,0 +1,62 @@
+version: "3.1"
+
+nlu:
+- intent: saudacao
+  examples: |
+    - oi
+    - olá
+
+- intent: despedida
+  examples: |
+    - tchau
+    - obrigado
+    - valeu
+  
+
+- intent: problema_acesso
+  examples: |
+    - não consigo acessar minha conta
+    - estou com problemas para entrar
+    - acesso negado
+    - minha senha não funciona
+    - esqueci meu login
+
+- intent: problema_plano
+  examples: |
+    - quero mudar meu plano
+    - como faço para alterar minha assinatura?
+    - quero um plano mais barato
+    - como atualizo para o plano família?
+    - quero cancelar meu plano
+
+- intent: problema_tecnico
+  examples: |
+    - o aplicativo não funciona
+    - a música não toca
+    - está travando muito
+    - não consigo baixar músicas
+    - o player está com problema
+
+- intent: problema_pagamento
+  examples: |
+    - cobrança errada na minha conta
+    - me cobraram valor incorreto
+    - problema no pagamento
+    - meu cartão foi recusado
+    - pagamento não reconhecido
+
+- intent: afirmar
+  examples: |
+    - sim
+    - claro
+    - pode ser
+    - ok
+    - por favor
+
+- intent: negar
+  examples: |
+    - não
+    - não obrigado
+    - não precisa
+    - deixa pra lá
+    - não quero
