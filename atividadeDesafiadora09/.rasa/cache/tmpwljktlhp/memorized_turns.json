@@ -1,0 +1,11 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohqbQ4ObEIKF1WlB9fkllSmpNfWxsLAJZuIXk=": "action_buscar_livro_titulo",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohqbQ4ObEIKF1WlB9fkllSmpNfS5yJ2HQSZ3wsANzaRr0=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohqbQ4ObEIKF1WlB+fWFqSX1RbGwsAdLUhAw==": "action_buscar_livro_autor",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohqbQ4ObEIKF1WlB+fWFqSX1RLnIFYNBJleCwAAAVFWw==": "action_listen",
+    "eJwtisEJwDAIAFdxgE6QVUoJNvgQWlPU5BPcvUL7u+NuX7HBepRmxebcpcD6oAreVOCXi81J8h1Gmg9Lqhc4hzXUzFN7RbMh3iOOF7gFIeU=": "action_buscar_livro_assunto",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohqbQ4ObEIKF1WlB+fWFxcmleSX0uckVi1EmlBLAC21kgB": "action_listen"
+  }
+}

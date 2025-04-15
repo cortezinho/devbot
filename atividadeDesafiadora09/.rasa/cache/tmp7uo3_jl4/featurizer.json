@@ -1,0 +1,53 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "back": 0,
+        "bot_challenge": 1,
+        "buscar_livro_assunto": 2,
+        "buscar_livro_autor": 3,
+        "buscar_livro_titulo": 4,
+        "goodbye": 5,
+        "nlu_fallback": 6,
+        "out_of_scope": 7,
+        "restart": 8,
+        "session_start": 9
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_buscar_livro_titulo": 13,
+        "action_buscar_livro_autor": 14,
+        "action_buscar_livro_assunto": 15,
+        "utter_ask_assunto_livro": 16,
+        "utter_ask_nome_autor": 17,
+        "utter_ask_titulo_livro": 18,
+        "utter_goodbye": 19,
+        "utter_iamabot": 20
+      },
+      "entities": {
+        "assunto_livro": 0,
+        "nome_autor": 1,
+        "titulo_livro": 2
+      },
+      "slots": {},
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}

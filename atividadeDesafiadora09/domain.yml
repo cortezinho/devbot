@@ -1,0 +1,34 @@
+version: "3.1"
+
+intents:
+  - buscar_livro_titulo
+  - buscar_livro_autor
+  - buscar_livro_assunto
+  - goodbye
+  - bot_challenge
+
+entities:
+  - titulo_livro
+  - nome_autor
+  - assunto_livro
+
+actions:
+  - action_buscar_livro_titulo
+  - action_buscar_livro_autor
+  - action_buscar_livro_assunto
+
+responses:
+  utter_ask_titulo_livro:
+    - text: "Qual é o título do livro?"
+
+  utter_ask_nome_autor:
+    - text: "Qual autor você quer pesquisar?"
+
+  utter_ask_assunto_livro:
+    - text: "Sobre qual assunto você quer buscar livros?"
+
+  utter_goodbye:
+    - text: "Até mais! Volte quando quiser descobrir mais livros 📚😉"
+
+  utter_iamabot:
+    - text: "Sou um assistente virtual que te ajuda a encontrar livros com base no título, autor ou assunto!"
