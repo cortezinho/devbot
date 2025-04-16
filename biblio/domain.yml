@@ -1,0 +1,43 @@
+version: "3.1" # versão do schema YAML do Rasa usada neste arquivo
+
+intents: # lista de intenções que o chatbot pode reconhecer
+  - saudacao
+  - buscar_livro_por_titulo
+  - buscar_livro_por_autor
+ #- buscar_livro_por_assunto
+  - despedida
+
+entities: # lista de entidades que podem ser extraídas das mensagens do usuario
+  - titulo
+  - autor
+ #- assunto
+
+slots: # definição dos slots (variaveis que armazenam informações extraídas)
+  titulo: #slot para armazenar o valor da entitade "titulo"
+    type: text #tipo do slot (texto livre)
+    mappings: # definições de como o slot será preenchido
+      - type: from_entity # slot será preenchido a partir de uma entidade
+        entity: titulo # nome da entidade de origem do valor
+  
+  autor: #slot para armazenar o valor da entitade "autor"
+    type: text #tipo do slot (texto livre)
+    mappings: # definições de como o slot será preenchido
+      - type: from_entity # slot será preenchido a partir de uma entidade
+        entity: autor # nome da entidade de origem do valor
+
+responses: # respostas que o chatbot pode dizer ao usuario
+  utter_saudacao: # resposta associada a intenção saudação
+     - text: "Olá! como posso te ajudar a encontrar um livro?" #texto da resposta
+
+  utter_despedida:
+    - text: "Até logo! volte sempre para novas descobertas literárias."
+
+  utter_perguntar_titulo: # pergunta deita quando o chatbot precisa saber o titulo
+    - text: "Qual é o titulo do livro que você procura?" 
+
+  utter_perguntar_autor: # pergunta deita quando o chatbot precisa saber o autor
+    - text: "Qual autor você quer pesquisar?"
+
+actions: # lista de ações personalizadas que serão chamadas pelo Rasa
+  - action_buscar_por_titulo # ação customizada para buscar livro por titulo
+  - action_buscar_por_autor # ação customizada para buscar livro por autor

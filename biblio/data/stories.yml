@@ -1,0 +1,14 @@
+version: "3.1" # versão do schema YAML utilizado para definir historias no Rasa
+
+stories: # inicio da definição das historias
+
+- story: buscar por titulo # nome da historia que trata a busca do livro por titulo
+  steps: # etapas da conversa
+  - intent: buscar_livro_por_titulo  # pimeiro passo: o usuario expressa a itenção de buscar livro por titulo
+  - action: action_buscar_por_titulo # segundo passo: o chatbot executa a ação personalizada de buscar livro por titulo
+
+- story: buscar por autor # nome da historia que trata a busca do livro por autor
+  steps: # etapas da conversa
+  - intent: buscar_livro_por_autor  # pimeiro passo: o usuario expressa a itenção de buscar livro por autor
+  - action: action_buscar_por_autor # segundo passo: o chatbot executa a ação personalizada de buscar livro por autor
+
