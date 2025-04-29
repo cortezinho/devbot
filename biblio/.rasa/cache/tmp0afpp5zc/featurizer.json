@@ -1,0 +1,52 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "back": 0,
+        "buscar_livro_por_autor": 1,
+        "buscar_livro_por_titulo": 2,
+        "despedida": 3,
+        "nlu_fallback": 4,
+        "out_of_scope": 5,
+        "restart": 6,
+        "saudacao": 7,
+        "session_start": 8
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_buscar_por_titulo": 13,
+        "action_buscar_por_autor": 14,
+        "utter_despedida": 15,
+        "utter_perguntar_autor": 16,
+        "utter_perguntar_titulo": 17,
+        "utter_saudacao": 18
+      },
+      "entities": {
+        "autor": 0,
+        "titulo": 1
+      },
+      "slots": {
+        "titulo_0": 0,
+        "autor_0": 1
+      },
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}

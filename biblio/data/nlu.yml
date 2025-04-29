@@ -15,9 +15,14 @@ nlu: # bloco principal contendo os exemplos de treinamentos para os intents
     - tem o livro [O Pequeno Príncipe](titulo) # pergunta sobre a disponibilidade de um titulo
 
 - intent: buscar_livro_por_autor
-  exampls: | 
+  examples: | 
     - quero livros do [Machado de Assis](autor) # solicitação por obra de um autor especifico
     - me mostre obras escritas por [J.K Rowlig](autor)
+
+- intent: buscar_livro_por_assunto
+  examples: | 
+    - quero livros de [terror](assunto) # solicitação por obra de um assunto especifico
+    - me mostre obras sobre [fantasia](assunto)
 
 - intent: despedida
   examples: |

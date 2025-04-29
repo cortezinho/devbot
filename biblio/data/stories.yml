@@ -12,3 +12,8 @@ stories: # inicio da definição das historias
   - intent: buscar_livro_por_autor  # pimeiro passo: o usuario expressa a itenção de buscar livro por autor
   - action: action_buscar_por_autor # segundo passo: o chatbot executa a ação personalizada de buscar livro por autor
 
+- story: buscar por assunto # nome da historia que trata a busca do livro por autor
+  steps: # etapas da conversa
+  - intent: buscar_livro_por_assunto  # pimeiro passo: o usuario expressa a itenção de buscar livro por autor
+  - action: action_buscar_por_assunto # segundo passo: o chatbot executa a ação personalizada de buscar livro por autor
+

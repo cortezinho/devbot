@@ -1,13 +1,13 @@
-version: "3.1"
+version: "3.1" # Versão do schema YAML utilizada para regras no Rasa
 
-rules:
+rules: # Início da definição das regras de comportamento do assistente
 
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
+- rule: Saudação # Nome da regra que define o comportamento diante de uma saudação
+  steps: # Etapas da regra
+    - intent: saudacao # Quando o usuário envia uma saudação
+    - action: utter_saudacao # O bot responde com a mensagem definida em "utter_saudacao"
 
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+- rule: Despedida # Nome da regra que define o comportamento diante de uma despedida
+  steps: # Etapas da regra
+    - intent: despedida # Quando o usuário envia uma despedida
+    - action: utter_despedida # O bot responde com a mensagem definida em "utter_despedida"
