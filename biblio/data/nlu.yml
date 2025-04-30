@@ -27,6 +27,7 @@ nlu: # bloco principal contendo os exemplos de treinamentos para os intents
     - me mostre livros sobre [suspense](assunto)
     - me mostre livros sobre [ficcao cientifica](assunto)
     - me mostre livros sobre [acao](assunto)
+    - me mostre livros sobre [harry potter](assunto)
 
 - intent: despedida
   examples: |
