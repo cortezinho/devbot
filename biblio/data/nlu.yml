@@ -23,6 +23,9 @@ nlu: # bloco principal contendo os exemplos de treinamentos para os intents
   examples: | 
     - quero livros de [terror](assunto) # solicitação por obra de um assunto especifico
     - me mostre obras sobre [fantasia](assunto)
+    - me mostre livros sobre [romance](assunto)
+    - me mostre livros sobre [suspense](assunto)
+    - me mostre livros sobre [ficcao cientifica](assunto)
 
 - intent: despedida
   examples: |
