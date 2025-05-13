@@ -8,26 +8,176 @@ nlu: # bloco principal contendo os exemplos de treinamentos para os intents
     - bom dia
     - boa tarde
 
-- intent: buscar_livro_por_titulo # intenção de buscar livros com base no titulo
-  examples: | # exemplos com a entidade "titulo" anotada
-    - quero um livro chamado [Dom Casmurro](titulo) # busca por titulo especifico
+- intent: buscar_livro_por_titulo
+  examples: |
+    - quero um livro chamado [Dom Casmurro](titulo)
     - estou procurando o livro [1984](titulo)
-    - tem o livro [O Pequeno Príncipe](titulo) # pergunta sobre a disponibilidade de um titulo
+    - tem o livro [O Pequeno Príncipe](titulo)
+    - você tem [Memórias Póstumas de Brás Cubas](titulo)?
+    - onde encontro [A Revolução dos Bichos](titulo)?
+    - me mostra o livro [O Hobbit](titulo)
+    - gostaria de ler [Capitães da Areia](titulo)
+    - quero comprar [A Menina que Roubava Livros](titulo)
+    - me indique [O Alquimista](titulo)
+    - estou atrás do livro [Orgulho e Preconceito](titulo)
+    - quero saber se tem [Cem Anos de Solidão](titulo)
+    - estou buscando [O Senhor dos Anéis](titulo)
+    - vocês têm [Grande Sertão: Veredas](titulo)?
+    - estou procurando [Ensaio sobre a Cegueira](titulo)
+    - tem o livro [Veronika Decide Morrer](titulo)?
+    - me interessa [A Cabana](titulo)
+    - quero saber sobre [It, A Coisa](titulo)
+    - quero ler [Harry Potter e a Pedra Filosofal](titulo)
+    - vocês têm [Dom Quixote](titulo)?
+    - tem como achar [A Metamorfose](titulo)?
+    - onde posso encontrar [O Nome do Vento](titulo)?
+    - quero ver [A Sombra do Vento](titulo)
+    - me mostra o título [O Morro dos Ventos Uivantes](titulo)
+    - estou atrás de [O Lado Bom da Vida](titulo)
+    - onde encontro [O Código Da Vinci](titulo)?
+    - gostaria do livro [O Diário de Anne Frank](titulo)
+    - me mostre [A Culpa é das Estrelas](titulo)
+    - estou buscando [Coraline](titulo)
+    - quero ver o livro [O Silmarillion](titulo)
+    - vocês têm [O Mundo de Sofia](titulo)?
+    - estou interessado em [A Guerra dos Tronos](titulo)
+    - me mostra se tem [A Dança da Morte](titulo)
+    - procurei por [A Redoma de Vidro](titulo)
+    - sabe se tem [Pequenas Grandes Mentiras](titulo)?
+    - quero ver [O Ceifador](titulo)
+    - tem [A Seleção](titulo)?
+    - gostaria de [O Conto da Aia](titulo)
+    - quero comprar [Mil Beijos de Garoto](titulo)
+    - onde tem [O Sol é para Todos](titulo)?
+    - estou atrás do título [O Leitor](titulo)
+    - estou procurando [Torto Arado](titulo)
+    - quero ver se tem [Quarto de Despejo](titulo)
+    - tem o romance [Vidas Secas](titulo)?
+    - sabe onde tem [A Cor Púrpura](titulo)?
+    - estou buscando [Os Miseráveis](titulo)
+    - você tem o livro [Persuasão](titulo)?
+    - me mostre [A Mulher na Janela](titulo)
+    - gostaria de comprar [As Crônicas de Nárnia](titulo)
+    - preciso de [A Vida Invisível de Eurídice Gusmão](titulo)
+    - quero [Um Defeito de Cor](titulo)
+    - tem o título [A Paciente Silenciosa](titulo)?
+    - desejo o livro [O Pintassilgo](titulo)
+    - você vende [A Biblioteca da Meia-Noite](titulo)?
+    - estou procurando o título [O Último Desejo](titulo)
+    - gostaria de saber sobre [Os Sete Maridos de Evelyn Hugo](titulo)
+    - queria o livro [Eleanor & Park](titulo)
+    - posso ver [P.S. Eu Te Amo](titulo)?
+    - quero ver o livro [O Demonologista](titulo)
+    - estou atrás de [Corte de Espinhos e Rosas](titulo)
+    - tem como achar [A Hipótese do Amor](titulo)?
+
 
 - intent: buscar_livro_por_autor
-  examples: | 
-    - quero livros do [Machado de Assis](autor) # solicitação por obra de um autor especifico
+  examples: |
+    - quero livros do [Machado de Assis](autor)
     - me mostre obras escritas por [J.K Rowlig](autor)
+    - tem livros do [George Orwell](autor)?
+    - gostaria de ver obras do [Stephen King](autor)
+    - livros do [Paulo Coelho](autor), por favor
+    - mostre livros de [Agatha Christie](autor)
+    - quero alguma coisa escrita por [Clarice Lispector](autor)
+    - me dá livros da [Colleen Hoover](autor)
+    - tem algo do [José Saramago](autor)?
+    - livros de [Fernando Pessoa](autor), você tem?
+    - estou procurando por livros de [Neil Gaiman](autor)
+    - me recomenda algo do [Dan Brown](autor)?
+    - quero ler obras do [Chico Buarque](autor)
+    - livros do [Rubem Fonseca](autor)
+    - o que você tem da [J. K. Rowling](autor)?
+    - indica livros do [Carlos Drummond de Andrade](autor)
+    - tem obras do [William Shakespeare](autor)?
+    - livros de [Gabriel García Márquez](autor)?
+    - livros do [Leonardo Padura](autor)?
+    - quero algo de [José de Alencar](autor)
+    - livros da [Virginia Woolf](autor)?
+    - quero ver livros do [Edgar Allan Poe](autor)
+    - me mostre obras do [J. R. R. Tolkien](autor)
+    - o que o [Italo Calvino](autor) escreveu?
+    - algo de [Albert Camus](autor)?
+    - você tem livros de [Franz Kafka](autor)?
+    - livros de [Haruki Murakami](autor)?
+    - obras do [George R. R. Martin](autor), por favor
+    - estou procurando algo do [Ernest Hemingway](autor)
+    - gostaria de ver livros do [Luis Fernando Verissimo](autor)
+    - livros do [Machado](autor)
+    - tem algo da [Margaret Atwood](autor)?
+    - quero livros escritos por [Philip K. Dick](autor)
+    - mostre livros da [Suzanne Collins](autor)
+    - gostaria de ler [Stephenie Meyer](autor)
+    - livros do [Jostein Gaarder](autor)?
+    - alguma obra do [Monteiro Lobato](autor)?
+    - o que tem do [Lima Barreto](autor)?
+    - quero sugestões do [André Vianco](autor)
+    - me mostra livros de [Ruth Rocha](autor)
+    - livros do [Luis Sepúlveda](autor)?
+    - tem algo escrito por [Mario Vargas Llosa](autor)?
+    - livros de [Carlos Ruiz Zafón](autor)?
+    - me indica livros do [Ziraldo](autor)?
+    - quero livros do [Rafael Montes](autor)
+    - o que tem do [Caio Fernando Abreu](autor)?
+    - gostaria de ler algo do [Liev Tolstói](autor)
+    - livros do [Fiódor Dostoiévski](autor)?
+    - tem livros da [Jane Austen](autor)?
+    - mostre obras do [Victor Hugo](autor)
+    - gostaria de algo de [Simone de Beauvoir](autor)
+    - tem algo da [Isabel Allende](autor)?
+    - livros de [Jojo Moyes](autor), por favor
+    - quero obras do [Oscar Wilde](autor)
+    - me recomenda livros da [Rainbow Rowell](autor)?
+    - você conhece algo do [Graciliano Ramos](autor)?
+    - quero livros do [Machado de Assis](autor), por favor
+    - o que você tem do [Nicholas Sparks](autor)?
+    - mostra livros do [Pedro Bandeira](autor)
+    - me mostra algo de [Lygia Fagundes Telles](autor)
+
 
 - intent: buscar_livro_por_assunto
   examples: | 
-    - quero livros de [terror](assunto) # solicitação por obra de um assunto especifico
-    - me mostre obras sobre [fantasia](assunto)
-    - me mostre livros sobre [romance](assunto)
-    - me mostre livros sobre [suspense](assunto)
-    - me mostre livros sobre [ficcao cientifica](assunto)
-    - me mostre livros sobre [acao](assunto)
-    - me mostre livros sobre [harry potter](assunto)
+    - estou procurando livros de [aventura](assunto)
+    - tem algum livro de [ficção científica](assunto)?
+    - você recomenda livros de [fantasia](assunto)?
+    - livros de [romance policial](assunto), por favor
+    - queria sugestões de livros sobre [mistério](assunto)
+    - o que você tem de [terror](assunto)?
+    - indica livros de [drama](assunto)?
+    - quero algo no estilo [romance](assunto)
+    - gostaria de ler livros sobre [filosofia](assunto)
+    - me recomenda livros de [psicologia](assunto)?
+    - livros bons de [história real](assunto)?
+    - tem algo de [biografia](assunto)?
+    - estou interessado em [ficção histórica](assunto)
+    - me mostra obras sobre [mitologia](assunto)
+    - livros sobre [política](assunto), você tem?
+    - tem alguma leitura de [espiritualidade](assunto)?
+    - você conhece bons livros sobre [tecnologia](assunto)?
+    - gostaria de ver títulos de [autoajuda](assunto)
+    - o que tem sobre [desenvolvimento pessoal](assunto)?
+    - quero um livro de [comédia](assunto)
+    - quero sugestões de livros de [suspense](assunto)
+    - indique livros de [aventura](assunto), por favor
+    - preciso de livros sobre [ciência](assunto)
+    - tem livros sobre [ecologia](assunto)?
+    - quero livros de [ficção distópica](assunto)
+    - você pode mostrar livros de [realismo mágico](assunto)?
+    - me dá uma lista de livros sobre [feminismo](assunto)
+    - estou buscando livros de [religião](assunto)
+    - livros sobre [educação](assunto), você tem?
+    - me indica algo de [culinária](assunto)?
+    - tem livros de [negócios](assunto)?
+    - quais livros você tem sobre [empreendedorismo](assunto)?
+    - quero sugestões de [literatura brasileira](assunto)
+    - livros de [clássicos da literatura](assunto), por favor
+    - tem algo de [thriller](assunto)?
+    - gostaria de uma leitura sobre [sociedade](assunto)
+    - livros de [medicina](assunto) disponíveis?
+    - estou procurando por [romance de época](assunto)
+    - quero um livro sobre [investigação criminal](assunto)
+    - você tem livros de [literatura infantil](assunto)?
 
 - intent: despedida
   examples: |
